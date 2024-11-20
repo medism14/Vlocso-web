@@ -130,7 +130,7 @@ export const useUploadImageVideo = ({
           resolve(e.target?.result as string);
         };
 
-        reader.onerror = (e) => {
+        reader.onerror = () => {
           reject(new Error("File reading failed"));
         };
 
@@ -181,13 +181,13 @@ export const useUploadImageVideo = ({
           // Handle invalid file format
           // alert('Invalid file format. Only JPG, PNG, and GIF are allowed.');
           // return;
-          let formatFile: string = "";
+          // let formatFile: string = "";
           if (type === "image") {
-            formatFile = supportedFormatsImages
+            supportedFormatsImages
               .map((format) => format.toUpperCase())
               .join(", ");
           } else {
-            formatFile = supportedFormatsVideos
+            supportedFormatsVideos
               .map((format) => format.toUpperCase())
               .join(", ");
           }
@@ -246,7 +246,7 @@ export const useUploadImageVideo = ({
                 resolve(e.target?.result as string);
               };
 
-              reader.onerror = (e) => {
+              reader.onerror = () => {
                 reject(new Error("File reading failed"));
               };
 

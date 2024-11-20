@@ -46,7 +46,7 @@ const ReusableTextField: React.FC<ReusableTextFieldProps> = (props) => {
     onClickIcon2,
     ariaDescribedBy = '',
     ariaDescribedById = '',
-    title = '',
+    // title = '',
     placeholder = '',
     color = 'primary',
     size = 'medium',

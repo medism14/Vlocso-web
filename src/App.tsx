@@ -3,13 +3,10 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  useLocation,
 } from "react-router-dom";
 import appRoutes from "./Routes/appRoutes";
 import { Header } from "./componenets";
 import Footer from "./componenets/Footer/Footer";
-import { useSelector } from "react-redux";
-import { selectIsLoggedIn } from "./reducers/userReducer";
 import PrivateRoute from "./Routes/PrivateRoute";
 
 // json-server --watch src/Dummy/db.json

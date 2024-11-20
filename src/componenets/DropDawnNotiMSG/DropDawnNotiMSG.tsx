@@ -7,7 +7,7 @@ import { Message } from "../../models/Message";
 import { TbMessageCircleUser } from "react-icons/tb";
 
 export const DropDawnNotiMSG = (props: DropDawnNotiMSGProps) => {
-  const { type, data, icon, closeMenu, navigate, isLoggedIn } =
+  const { type, data, icon, closeMenu, navigate} =
     useDropDawnNotiMSG(props);
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);

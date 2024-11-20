@@ -19,7 +19,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({
   width = 'w-auto',
   type = 'button',
   form = '',
-  background = "rgba(0, 0, 0, 0.12)"
+  // background = "rgba(0, 0, 0, 0.12)"
 }) => {
   // style
   const style = {

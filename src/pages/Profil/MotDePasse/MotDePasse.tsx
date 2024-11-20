@@ -9,7 +9,7 @@ import CustomButton from "../../../componenets/CustomButton/CustomButton";
 
 const MotDePasse: React.FC<MotDePasseProps> = (props) => {
   const {
-    user,
+    // user,
     formik,
     errorChangePasswordMsg,
     successChangePasswordMsg,
